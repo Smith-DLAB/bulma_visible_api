@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- if the module via npm or yarn are install as here -->
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./assets/css/style_index.css">
+    <!-- if you have a connection to internet-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
+    
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+
+    <title> Livre Audio </title>
+</head>
+<body>
+
+     <!-- SECTION NAVBAR -->
+    <nav class="navbar has-shadow">
+        <!-- logo / brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#home">
+                <img src="./assets/images/logo1.jpg" alt="logo_site" style="max-height:70px" class="px-2 py-2">Name's site
+            </a>
+            <!-- Icon Menu Mobile -->
+            <a href="#" class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!-- menu aparaissant -->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-uppercase">
+                <a class="navbar-item" href="./index.html"> Accueil </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./all_products.html"> All category </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="./one_product.html"> One Product </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="./one_product_secund.html"> One'secund Product </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#item"> Three Categorie </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#item"> Four Categorie </a>
+                    </div>
+                </div>
+                <a class="navbar-item is-active" href="./blog.html"> Blog </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./profil_personal_info.html"> profil </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="./shopping.html"> Shopping cart (0) </a> <!--Mon panier de vente-->
+                        <hr class="navbar-divider">
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./login.html"> Login </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="./inscription.html"> Inscription </a>
+                        <hr class="navbar-divider">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </nav>
+
+    <div class="background-blog">
+        <div class="content">
+            <h3 class="title is-size-3 has-text-white">Notre Blog</h3>
+            <p class="has-text-white"> Accueil / Blog </p>
+            <p class="has-text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repudiandae
+                animi officia error. Explicabo maiores laborum eius officiis eos eaque 
+                iusto fugiat, sequi alias illum architecto tempora magnam animi quidem?
+            </p>
+        </div>
+    </div>
+
+    <!-- SECTION BLOG -->
+    <section class="section">
+        <div class="container mt-6">
+
+            <div class="columns is-flex">
+
+                <!-- Les articles -->
+                <div class="column is-8">
+
+                    <div class="columns is-flex is-flex-wrap-wrap">
+
+                        <div class="column is-6 ">
+                            <div class="container">
+                                <div class="image-article mb-5">
+                                    <div class="contenu-image has-background-light">
+                                        <a href="#">
+                                            <img src="./assets/images/background1.jpeg" alt="" class="">
+                                        </a>
+                                        <div class="block-title">
+                                            <span>Web-developper appreciate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container is-fluid has-text-justified">
+                                    <div class="has-text-grey pt-1">
+                                        <span>Publié il y a 8 mois</span>
+                                    </div>
+                                    <div class="title has-text-weight-bold is-size-4 pt-4 ">
+                                        <span>Lorem Title for curses in loft</span>
+                                    </div>
+                                    <div class="has-text-grey">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Labore, voluptatum! Cum dolores quas harum sint magnam, 
+                                            temporibus rerum est voluptas illum omnis soluta repellat,
+                                            nobis doloribus, deleniti a dignissimos accusantium.
+                                        </p>
+                                    </div>
+                                    <div class="has-text-weight-bold pt-4">
+                                        <a href="#" class="is-flex">
+                                            <div class="icon is-size-4">
+                                                <i class="las la-arrow-right"></i>
+                                            </div>
+                                            <span class="pl-2">Lire plus</span>
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-6 ">
+                            <div class="container">
+                                <div class="image-article mb-5">
+                                    <div class="contenu-image has-background-light">
+                                        <a href="#">
+                                            <img src="./assets/images/background2.jpeg" alt="" class="">
+                                        </a>
+                                        <div class="block-title">
+                                            <span>Web-developper appreciate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container is-fluid has-text-justified">
+                                    <div class="has-text-grey pt-1">
+                                        <span>Publié il y a 8 mois</span>
+                                    </div>
+                                    <div class="title has-text-weight-bold is-size-4 pt-4 ">
+                                        <span>Lorem Title for curses in loft</span>
+                                    </div>
+                                    <div class="has-text-grey">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Labore, voluptatum! Cum dolores quas harum sint magnam, 
+                                            temporibus rerum est voluptas illum omnis soluta repellat,
+                                            nobis doloribus, deleniti a dignissimos accusantium.
+                                        </p>
+                                    </div>
+                                    <div class="has-text-weight-bold pt-4">
+                                        <a href="#" class="is-flex">
+                                            <div class="icon is-size-4">
+                                                <i class="las la-arrow-right"></i>
+                                            </div>
+                                            <span class="pl-2">Lire plus</span>
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-6 ">
+                            <div class="container">
+                                <div class="image-article mb-5">
+                                    <div class="contenu-image has-background-light">
+                                        <a href="#">
+                                            <img src="./assets/images/background3.jpeg" alt="" class="">
+                                        </a>
+                                        <div class="block-title">
+                                            <span>Web-developper appreciate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container is-fluid has-text-justified">
+                                    <div class="has-text-grey pt-1">
+                                        <span>Publié il y a 8 mois</span>
+                                    </div>
+                                    <div class="title has-text-weight-bold is-size-4 pt-4 ">
+                                        <span>Lorem Title for curses in loft</span>
+                                    </div>
+                                    <div class="has-text-grey">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Labore, voluptatum! Cum dolores quas harum sint magnam, 
+                                            temporibus rerum est voluptas illum omnis soluta repellat,
+                                            nobis doloribus, deleniti a dignissimos accusantium.
+                                        </p>
+                                    </div>
+                                    <div class="has-text-weight-bold pt-4">
+                                        <a href="#" class="is-flex">
+                                            <div class="icon is-size-4">
+                                                <i class="las la-arrow-right"></i>
+                                            </div>
+                                            <span class="pl-2">Lire plus</span>
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-6 ">
+                            <div class="container">
+                                <div class="image-article mb-5">
+                                    <div class="contenu-image has-background-light">
+                                        <a href="#">
+                                            <img src="./assets/images/background4.jpeg" alt="" class="">
+                                        </a>
+                                        <div class="block-title">
+                                            <span>Web-developper appreciate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container is-fluid has-text-justified">
+                                    <div class="has-text-grey pt-1">
+                                        <span>Publié il y a 8 mois</span>
+                                    </div>
+                                    <div class="title has-text-weight-bold is-size-4 pt-4 ">
+                                        <span>Lorem Title for curses in loft</span>
+                                    </div>
+                                    <div class="has-text-grey">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Labore, voluptatum! Cum dolores quas harum sint magnam, 
+                                            temporibus rerum est voluptas illum omnis soluta repellat,
+                                            nobis doloribus, deleniti a dignissimos accusantium.
+                                        </p>
+                                    </div>
+                                    <div class="has-text-weight-bold pt-4">
+                                        <a href="#" class="is-flex">
+                                            <div class="icon is-size-4">
+                                                <i class="las la-arrow-right"></i>
+                                            </div>
+                                            <span class="pl-2">Lire plus</span>
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="is-flex is-justify-content-center"></div>
+                </div>
+
+                <!-- Le menu -->
+                <div class="column">
+
+                    <div class="container p-3">
+
+                        <!-- Blog search -->
+                        <div class="widget-search  has-background-light p-5">
+                            <h5 class="is-size-5 mb-5 has-text-weight-bold">Barre de recherche</h5>
+                            <form class="mb-5" action="{{ url("search/results") }}">
+                                <input class="input" type="search" name="q" placeholder="Search">
+                            </form>
+                        </div>
+
+                        <!-- Blog Catefory -->
+                        <div class="widget-category my-6 p-5 has-background-light">
+                            <h5 class="is-size-5 mb-4 has-text-weight-bold mb-3">Category</h5>
+                            <div class="widget-content">
+                                <ul class="pl-2 is-lowercase">
+                                    <li class="pb-2">
+                                        <i class="las la-angle-right"></i>
+                                        <a href="#" class="pl-2 is-size-5"> web site  </a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <i class="las la-angle-right"></i>
+                                        <a href="#" class="pl-2 is-size-5"> webmarketing </a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <i class="las la-angle-right"></i>
+                                        <a href="#" class="pl-2 is-size-5"> E-commerce </a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <i class="las la-angle-right"></i>
+                                        <a href="#" class="pl-2 is-size-5"> Developpement d'application </a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <i class="las la-angle-right"></i>
+                                        <a href="#" class="pl-2 is-size-5"> Tech &amp; outils </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post recent -->
+                        <div class="widget-post px-6 py-5 has-background-light mb-6">
+                            <h5 class="is-size-5 mb-4 has-text-weight-bold mb-3">Recent posts</h5>
+                            <div class="widget-posts">
+                                <!-- Post here -->
+                                <div class="columns pb-3">
+                                    <div class="mb-5">
+                                        <div class="has-background-light">
+                                            <a href="#">
+                                                <img src="./assets/images/background1.jpeg" alt="" class="">
+                                            </a>
+                                            <span class="title has-text-weight-bold is-size-5 py-2">Lorem Title for curses in loft</span>
+                                            <br>
+                                            <span class="has-text-grey">il y a 8 mois</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="columns pb-3">
+                                    <div class="mb-5">
+                                        <div class="has-background-light">
+                                            <a href="#">
+                                                <img src="./assets/images/background1.jpeg" alt="" class="">
+                                            </a>
+                                            <span class="title has-text-weight-bold is-size-5 py-2">Lorem Title for curses in loft</span>
+                                            <br>
+                                            <span class="has-text-grey">il y a 8 mois</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tag cloud -->
+                        <div class="widget-tag px-6 py-5 has-background-light mb-6">
+                            <h5 class="is-size-5 mb-4 has-text-weight-bold mb-3">Tag Cloud</h5>
+                            <div class="tags is-flex">
+                                <span class="tage"> <a href="#" class="has-text-white"> Site Web </a>  </span>
+                                <span class="tage"> <a href="#" class="has-text-white"> Application Web </a>  </span>
+                                <span class="tage"> <a href="#" class="has-text-white"> Wordpress </a>  </span>
+                                <span class="tage"> <a href="#" class="has-text-white"> SEO </a>  </span>
+                                <span class="tage"> <a href="#" class="has-text-white"> Symfony </a>  </span>
+                                <span class="tage"> <a href="#" class="has-text-white"> Shopify </a>  </span>
+                                <span class="tage"> <a href="#" class="has-text-white"> Tendance Web </a>  </span>
+                                <span class="tage"> <a href="#" class="has-text-white"> Réseaux sociaux </a>  </span>
+                                <span class="tage"> <a href="#" class="has-text-white"> Application mobile </a>  </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- SECTION FOOTER -->
+    <footer class="footer pt-20 pb-0 has-background-grey-darker">
+        <div class="columns mb-0">
+            
+            <div class="column is-4 mb-12 mb-0-tablet mb-20-tablet">
+                <a href="#" class="is-block title mb-4 has-text-white is-size-4">Livres Audio</a>
+
+                <ul class="mb-8 my-6">
+                    <a href="#" class="is-flex is-size-6 title is-align-items-center has-text-white">
+                        <span class="icons mr-3 has-text-left"></span>
+                        <p class=""> +229 *********** </p>
+                    </a>
+                    <a href="#" class="title is-flex is-size-6 is-align-items-center has-text-white">
+                        <span class="icons mr-3 has-text-left"></span>
+                        <p class=""> exampleAdmin@gmail.com </p>
+                    </a>
+                </ul>
+                
+                <ul class="is-flex">
+                    <span class="icons box mr-3">jide</span>
+                    <span class="icons box mr-3">jide</span>
+                    <span class="icons box mr-3">jide</span>
+                    <span class="icons box mr-3">jide</span>
+                    <span class="icons box mr-3 is-hidden">jide</span>
+                </ul>
+            </div>
+            <div class="column is-8 is-6-mobile is-uppercase is-flex">
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Pages </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="./index.html"> Accueil </a></li>
+                        <li class="mb-6"> <a href="./profil.html"> Profil </a></li>
+                        <li class="mb-6"> <a href="./login.html"> Login </a></li>
+                        <li class="mb-6"> <a href="./inscription.html"> Inscription </a></li>
+                    </ul>
+                </div>
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Produit </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="./categorie.html"> Categorie </a></li>
+                        <li class="mb-6"> <a href="./blog.html"> Blog </a></li>
+                        <li class="mb-6"> <a href="./shopping.html"> Shopping Cart </a></li>
+                        <li class="mb-6"> <a href="#"> Item </a> </li>
+                    </ul>
+                </div>
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Contact </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                        <li class="mb-6"> <a href="#"> Login </a> </li>
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <hr style="opacity:0.23">
+
+        <div class="is-flex is-justify-content-space-between py-10">
+            <p class="is-size-6 has-text-white title"> <span class="is-size-5">&copy</span><span>opyright@2022 DLAB-Foundation</span></p>
+            <a href="#" class="title is-size-6 has-text-white"> Go to up </a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

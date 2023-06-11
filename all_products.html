@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- if the module via npm or yarn are install as here -->
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./assets/css/style_index.css">
+    <link rel="stylesheet" href="./node_modules/bulma/bulma.sass">
+
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+    <!-- if you have a connection to internet-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
+    <title> Livre Audio - all product </title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- SECTION NAVBAR -->
+    <nav class="navbar has-shadow">
+        <!-- logo / brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#home">
+                <img src="./assets/images/logo1.jpg" alt="logo_site" style="max-height:70px" class="px-2 py-2">Name's
+                site
+            </a>
+            <!-- Icon Menu Mobile -->
+            <a href="#" class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!-- menu aparaissant -->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-uppercase">
+                <a class="navbar-item" href="./index.html"> Accueil </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./all_products.html"> All category </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="./one_product.html"> One Product </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="./one_product_secund.html"> One'secund Product </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#item"> Three Categorie </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#item"> Four Categorie </a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="./blog.html"> Blog </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./profil_personal_info.html"> profil </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="./shopping.html"> Shopping cart (0) </a>
+                        <!--Mon panier de vente-->
+                        <hr class="navbar-divider">
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./login.html"> Login </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item is-active" href="./inscription.html"> Inscription </a>
+                        <hr class="navbar-divider">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Exemple de module bulma : Breadcrumbs -->
+
+    <div class="section pt-4 pb-5">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="container">
+                <li> <a href="#"> Books Appear </a> </li>
+                <li class="is-active"> <a href="#"> All Categories </a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- For all books and details -->
+
+    <section class="has-background-light is-clipped pt-3">
+
+        <div class="container">
+
+            <div class="columns mx-auto is-multiline is-justify-content-space-between mb-3 is-vcentered">
+
+                <div class="column is-12-touch is-6-desktop mb-1 mb-0-widescreen">
+                    <h2 class="title">
+                        <span class="is-block pb-2">Found 125 result for</span>
+                        <a href="#" class="has-text-info">name's product</a>
+                    </h2>
+                </div>
+
+                <div class="column is-narrow">
+                    <!-- Sort by {newest - price - most popular} -->
+                    <!-- Form for hte select -->
+                    <div class="is-size-5">
+                        <div class="select">
+                            <select class="has-text-weight-bold has-text-grey" name="" id="">
+                                <option value="">small</option>
+                                <option value="">medium</option>
+                                <option value="">large</option>
+                                <option value="">large-xxl</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-narrow">
+                    <a href="#" class="button mt-3 p-5 mr-2 is-size-4 has-background-white"> <span class="las la-bars"></span>  </a>
+                    <a href="#" class="button mt-3 p-5 is-size-4"> <span class="las la-grip-horizontal"></span>  </a>
+                </div>
+
+            </div> 
+
+            <div class="columns is-multiline">
+
+                <!-- section nav des categories -->
+                <div class="column is-12-touch is-3-desktop px-3">
+
+                    <div class="column is-6-touch is-12-desktop">
+                        <div class="mb-2 px-3 px-3-desktop py-3 has-background-white">
+                            <h3 class="title is-size-4 has-text-centered mb-4 mb-0-touch">Categories</h3>
+                            <ul class="mb-0"> <!-- is-hidden-touch -->
+                                <li class="mb-4"> <a href="#" class="has-text-dark is-size-5">Names's category</a> </li>
+                                <li class="mb-4"> <a href="#" class="has-text-dark is-size-5">Names's category</a> </li>
+                                <li class="mb-4"> <a href="#" class="has-text-dark is-size-5">Names's category</a> </li>
+                                <li class="mb-4"> <a href="#" class="has-text-dark is-size-5">Names's category</a> </li>
+                                <li class="mb-4"> <a href="#" class="has-text-dark is-size-5">Names's category</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-touch is-12-desktop">
+                        <div class="mb-2 px-3 px-3-desktop py-3 has-background-white">
+                            <h3 class="title is-size-4 has-text-centered mb-4 mb-0-touch">Color</h3>
+                            <div class="is-flex is-hidden-touch is-flex-wrap-wrap">
+                                <button class="button is-rounded px-2 mb-2 mr-4">
+                                    <div class="has-background-light has-text-light is-rounded">BB</div>
+                                </button>
+                                <button class="button is-rounded px-2  mr-4">
+                                    <div class="has-background-success is-rounded has-text-success">BB</div>
+                                </button>
+                                <button class="button is-rounded px-2 mr-4">
+                                    <div class="has-background-dark has-text-dark is-rounded">BB</div>
+                                </button>
+                                <button class="button is-rounded px-2 mr-4">
+                                    <div class="has-background-info has-text-info is-rounded">BB</div>
+                                </button>
+                                <button class="button is-rounded px-2 mr-4">
+                                    <div class="has-background-danger has-text-danger is-rounded">BB</div>
+                                </button>
+                                <button class="button is-rounded px-2 mr-4">
+                                    <div class="has-background-primary has-text-primary is-rounded-2">BB</div>
+                                </button>
+                                <button class="button is-rounded px-2 mr-4">
+                                    <div class="has-background-primary-dark has-text-primary-dark is-rounded">BB</div>
+                                </button>
+                                <button class="button is-rounded px-2 mr-4">
+                                    <div class="has-background-warning has-text-warning is-rounded">BB</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-touch is-12-desktop">
+                        <div class="mb-2 px-3 px-3-desktop py-3 has-background-white">
+                            <h3 class="title is-size-4 is-size-5-touch has-text-centered mb-8-desktop mb-0-touch">Price</h3>
+                            <div class="is-hidden-touch has-text-centered">
+                                <input type="range" name="" id="" class="mb-4">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <span class="has-text-info is-inline-block is-size-6 has-text-weight-bold">$0</span>
+                                    <span class="has-text-info is-inline-block is-size-6 has-text-weight-bold">$289</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-touch is-12-desktop">
+                        <div class="mb-2 px-3 px-3-desktop py-3 has-background-white">
+
+                            <h3 class="title is-size-4 is-size-5-touch has-text-centered mb-8-desktop mb-0-touch">Size</h3>
+                            <div class="is-hidden-touch">
+                                <div class="mb-2">
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal">36</button>
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal is-relative">37</button>
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal">38</button>
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal">39</button>
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal">40</button>
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal">41</button>
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal">42</button>
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal">43</button>
+                                    <button class="button mb-2 mr-1 px-2 py-2 has-text-weight-normal">44</button>
+                                </div>
+                                <div class="mt-8 has-text-centered">
+                                    <a href="#" class="has-text-info">show all <!-- a icon to get all --> </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="column is-6-touch is-12-desktop">
+                        <div class="mb-2 px-3 px-3-desktop py-3 has-background-white">
+                            <h3 class="title is-size-4 is-size-5-touch has-text-centered mb-8-desktop mb-0-touch">Delivery</h3>
+                            <div class="is-hidden-touch">
+                                <label for="" class="checkbox is-block mb-3">
+                                    <input type="checkbox" name="" id="" class="mr-2">
+                                    <span>Standard</span>
+                                </label>
+                                <label for="" class="checkbox is-block mb-3">
+                                    <input type="checkbox" name="" id="" class="mr-2">
+                                    <span>Next day (!yes)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-touch is-12-desktop">
+                        <div class="mb-2 px-3 px-3-desktop py-3 has-background-white">
+                            <h3 class="title is-size-4 is-size-5-touch has-text-centered mb-8-desktop mb-0-touch">Location</h3>
+                            <input type="text" name="location" placeholder="City" class="input px-8 py-4 has-background-white">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- section affiche les livres disponibles -->
+                <div class="column is-12-touch is-9-desktop px-3 mt-3">
+                    <div class="columns is-multiline">
+                        <div class="column is-4">
+                            <div class="has-background-white is-relative px-4 py-4">
+                                <span class="tag is-danger is-absolute is-top-0 is-left-0 ml-8 mt-8">-15%</span>
+                                <a href="#" class="is-block mb-2">
+                                    <img style="width: 12rem;" src="./assets/image_product/product-bottle.png" alt="image_product" class="image mx-auto mt-2 mb-5">
+                                    <h3 class="title is-size-5 mb-2 has-text-weight-bold">Name product</h3>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$156</span>
+                                        <span class="has-text-grey is-size-7">$567</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="has-background-white is-relative px-4 py-4">
+                                <span class="tag is-info is-absolute is-top-0 is-left-0 ml-8 mt-8 is-uppercase">new</span>
+                                <a href="#" class="is-block mb-2">
+                                    <img style="width: 12rem;" src="./assets/image_product/product-bottle.png" alt="image_product" class="image mx-auto mt-2 mb-5">
+                                    <h3 class="title is-size-5 mb-2 has-text-weight-bold">Name product</h3>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$156</span>
+                                        <span class="has-text-grey is-size-7">$567</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="has-background-white is-relative px-4 py-4">
+                                <span class="tag is-danger is-absolute is-top-0 is-left-0 ml-8 mt-8">-15%</span>
+                                <a href="#" class="is-block mb-2">
+                                    <img style="width: 12rem;" src="./assets/image_product/product-bottle.png" alt="image_product" class="image mx-auto mt-2 mb-5">
+                                    <h3 class="title is-size-5 mb-2 has-text-weight-bold">Name product</h3>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$156</span>
+                                        <span class="has-text-grey is-size-7">$567</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="has-background-white is-relative px-4 py-4">
+                                <span class="tag is-info is-absolute is-top-0 is-left-0 ml-8 mt-8 is-uppercase">new</span>
+                                <a href="#" class="is-block mb-2">
+                                    <img style="width: 12rem;" src="./assets/image_product/product-bottle.png" alt="image_product" class="image mx-auto mt-2 mb-5">
+                                    <h3 class="title is-size-5 mb-2 has-text-weight-bold">Name product</h3>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$156</span>
+                                        <span class="has-text-grey is-size-7">$567</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="has-text-centered py-5">
+                <a href="#" class="button is-primary is-uppercase"> Show more </a>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- SECTION FOOTER - 1erFooter -->
+    <footer class="footer pt-20 pb-0 has-background-grey-darker">
+        <div class="columns mb-0">
+
+            <div class="column is-4 mb-12 mb-0-tablet mb-20-tablet">
+                <a href="#" class="is-block title mb-4 has-text-white is-size-4">Livres Audio</a>
+
+                <ul class="mb-8 my-6">
+                    <p class="has-text-white my-3 is-uppercase">Info contact</p>
+                    <a href="#" class="is-flex is-size-6 title is-align-items-center has-text-white">
+                        <span class="icons mr-3 has-text-left"></span>
+                        <p class=""> +229 *********** </p>
+                    </a>
+                    <a href="#" class="title is-flex is-size-6 is-align-items-center has-text-white">
+                        <span class="icons mr-3 has-text-left"></span>
+                        <p class=""> exampleAdmin@gmail.com </p>
+                    </a>
+                </ul>
+
+                <ul class="is-flex">
+                    <span class="icons box mr-3">jide</span>
+                    <span class="icons box mr-3">jide</span>
+                    <span class="icons box mr-3">jide</span>
+                    <span class="icons box mr-3">jide</span>
+                    <span class="icons box mr-3 is-hidden">jide</span>
+                </ul>
+            </div>
+            <div class="column is-8 is-6-mobile is-uppercase is-flex">
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Pages </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="./index.html"> Accueil </a></li>
+                        <li class="mb-6"> <a href="./profil.html"> Profil </a></li>
+                        <li class="mb-6"> <a href="./login.html"> Login </a></li>
+                        <li class="mb-6"> <a href="./inscription.html"> Inscription </a></li>
+                    </ul>
+                </div>
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Produit </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="./categorie.html"> Categorie </a></li>
+                        <li class="mb-6"> <a href="./blog.html"> Blog </a></li>
+                        <li class="mb-6"> <a href="./shopping.html"> Shopping Cart </a></li>
+                        <li class="mb-6"> <a href="#"> Item </a> </li>
+                    </ul>
+                </div>
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Contact </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                        <li class="mb-6"> <a href="#"> Login </a> </li>
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <hr style="opacity:0.23">
+
+        <div class="is-flex is-justify-content-space-between py-10">
+            <p class="is-size-6 has-text-white title"> <span class="is-size-5">&copy</span><span>opyright@2022
+                    DLAB-Foundation</span></p>
+            <a href="#" class="title is-size-6 has-text-white"> Go to up </a>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

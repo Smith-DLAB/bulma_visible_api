@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- if the module via npm or yarn are install as here -->
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./assets/css/style_index.css">
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
+	<link rel="stylesheet" href="./node_modules/bulma-carousel/dist/css/bulma-carousel.min.css">
+    
+    <!-- Icon awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- if you have a connection to internet-->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">-->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
+    <title> Livre Audio </title>
+</head>
+<body>
+
+    <title> Allez, débutons </title>
+
+    <!-- SECTION NAVBAR -->
+    <nav class="navbar has-shadow">
+        <!-- logo / brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#home">
+                <img src="./assets/images/logo1.jpg" alt="logo_site" style="max-height:70px" class="px-2 py-2">Name's site
+            </a>
+            <!-- Icon Menu Mobile -->
+            <a href="#" class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!-- menu aparaissant -->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-uppercase">
+                
+                <a class="navbar-item" href="./index.html"> Accueil </a>               
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./all_products.html"> All category </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="./one_product.html"> One Product </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="./one_product_secund.html"> One'secund Product </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#item"> Three Categorie </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#item"> Four Categorie </a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="./blog.html"> Blog </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./profil_personal_info.html"> profil </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="./shopping.html"> Shopping cart (0) </a> <!--Mon panier de vente-->
+                        <hr class="navbar-divider">
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./login.html"> Login </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="./inscription.html"> Inscription </a>
+                        <hr class="navbar-divider">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION DEFILEMENT DE 4 IMAGES-BACKGROUNG AVEC TEXTE -->
+
+    <!-- SECTION HEADER -->
+    <section id="carousel-slider">
+        <div class="contenu">
+            <!-- Start Carousel -->
+            <div id="carousel-demo" class="carousel">
+                <div class="item item-1 is-flex">
+                    
+                    <p id="caption" class="subtitle has-text-light has-text-weight-bold"> 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Doloremque est aliquam aspernatur quia. Quisquam, doloribus.
+                    </p>
+                    
+                    <img src="./assets/images/background2.jpeg" alt="">
+                   
+                </div>
+                <div class="item item-2">
+                    <p id="caption" class="subtitle has-text-light has-text-weight-bold"> 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Doloremque est aliquam aspernatur quia. Quisquam, doloribus.
+                    </p>
+                    <img src="./assets/images/background1.jpeg" alt="">
+                    
+                </div>
+                <div class="item item-3">
+                    <p id="caption" class="subtitle has-text-light has-text-weight-bold"> 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Doloremque est aliquam aspernatur quia. Quisquam, doloribus.
+                    </p>
+                    <img src="./assets/images/background3.jpeg" alt="">
+                    
+                </div>
+                
+            </div>
+            <!-- End Carousel -->
+        </div>
+    </section>
+    
+
+    <!-- SECTION DES CATÉGORIES DE PRODUIT "lISTER LES CATÉGORIES DISPONIBLES SOUS FORMES DE BLOCK ENCADRÉ" --> 
+    
+
+    <!-- SECTION DE CATEGORIE DISPONIBLE EXAMPLE_2 -->
+    <section class="section has-text-centered">
+            <h3 class="title is-size-6-mobile is-size-5-tablet is-size-4 is-uppercase">  Categorie de livre disponible </h3>
+            <div class="columns mt-5 is-8">
+                <div class="colmun is-4-tablet is-3 desktop p-2" id="imageCard">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="./assets/images/livre4.jpeg" alt="livre_4">
+                        </div>
+                        <div class="card-content">
+                            <p>£10.45</p>
+                            <p class="title is-size-5">Corado Esperanza - Modal</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a class="has-text-grey" id="add_in_shop" href="#"> Views </a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content  has-background-white py-2 px-5">
+                        <h3 class="title is-4 mb-4 has-text-centered"> Lorem's categorie </h3>
+                        
+                        <div class="is-relative has-background-white p-3 mx-auto">
+                            <div class="columns is-justify-content-space-between">
+                                <div class="column">
+                                    <h5 class="is-size-4 has-text-weight-bold"> Lorem Title </h5>
+                                
+                                    <h3 class="is-size-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Similique delectus libero accusamus dignissimos animi dolore.
+                                    </h3>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="is-relative p-2">
+                                        <div class="is-absolute is-left-0 is-top-0 has-background-primary">
+                                            <img class="image is-fluid" src="./assets/images/livre4.jpeg" alt="livre_4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            Des livres en relation
+                        </div>
+                        
+                        <div class="columns pt-2">
+                            <div class="column"> 
+                                <button class="button is-primary is-outlined is-uppercase "> Add to cart</button>
+                            </div>
+                            <div class="column is-4">
+                                <button class="button is-warning is-outlined is-uppercase"> Des livres en relation</button>
+                            </div>
+                            <div class="column has-text-right-desktop">
+                                <button class="button is-danger is-outlined is-uppercase" id="close"> Fermer </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun is-4-tablet is-3 desktop p-2" id="imageCard">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="./assets/images/livre3.jpeg" alt="livre_3">
+                        </div>
+                        <div class="card-content">
+                            <p>£10.45</p>
+                            <p class="title is-size-5">Corado Esperanza</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a class="has-text-grey" href="#"> Views </a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="colmun is-4-tablet is-3 desktop p-2" id="imageCard">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="./assets/images/livre2.jpeg" alt="livre_2">
+                        </div>
+                        <div class="card-content">
+                            <p>£10.45</p>
+                            <p class="title is-size-5">Corado Esperanza</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a class="has-text-grey" href="#"> Views </a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <!-- SECTION DE NEW LIVRE DISPONIBLE  -->
+    <section class="section has-text-centered"> 
+            <h3  class="title is-size-6-mobile is-size-5-tablet is-size-4 is-uppercase pb-3"> New Books Appear </h3>
+
+            <div class="columns is-vcentered is-multiline">
+                <div class="column has-bullet is-6-tablet is-4-desktop">
+                    <h3 class="is-size-4-mobile is-size-3 has-text-centered pb-3 subtitle"> <small> Emotion </small> </h3>
+                    <img class="pb-2" src="./assets/images/livre1.jpeg" alt="livre1">
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quaerat quia dolor consequatur facilis magni sit vitae 
+                        tempora delectus tenetur illum, quibusdam nemo rerum est 
+                        veritatis vero expedita nesciunt non modi?</p>
+                    <div class="columns m-2 has-text-centered">
+                        <div class="column"> 
+                            <button class="button mr-4 is-normal is-info is-outlined is-rounded"> Add to cart </button> 
+                            <button class="button is-normal is-info is-outlined is-rounded"> Voir plus ... </button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6-tablet is-4-desktop">
+                    <h3 class="is-size-4-mobile is-size-3 has-text-centered pb-3 subtitle"> <small> Signalisation </small> </h3>
+                    <img class="pb-2" src="./assets/images/livre2.jpeg" alt="livre2">
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quaerat quia dolor consequatur facilis magni sit vitae 
+                        tempora delectus tenetur illum, quibusdam nemo rerum est 
+                        veritatis vero expedita nesciunt non modi?</p>
+                        <div class="columns m-2">
+                            <div class="column has-text-centered"> 
+                                <button class="button mr-4 is-normal is-info is-outlined is-rounded"> Add to cart </button> 
+                                <button class="button is-normal is-info is-outlined is-rounded"> Voir plus ... </button> 
+                            </div>
+                        </div>        
+                </div>
+                <div class="column is-6-tablet is-4-desktop">
+                    <h3 class="is-size-4-mobile is-size-3 has-text-centered pb-3 subtitle"> <small> Red's Grandeur </small> </h3>
+                    <img class="pb-2" src="./assets/images/livre3.jpeg" alt="livre3">
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quaerat quia dolor consequatur facilis magni sit vitae 
+                        tempora delectus tenetur illum, quibusdam nemo rerum est 
+                        veritatis vero expedita nesciunt non modi?</p>
+                        <div class="columns m-2">
+                            <div class="column has-text-centered"> 
+                                <button class="button mr-4 is-normal is-info is-outlined is-rounded"> Add to cart </button> 
+                                <button class="button is-normal is-info is-outlined is-rounded"> Voir plus ... </button> 
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECTION DE LIVRE DISPONIBLE (EXAMPLE) -->
+
+    <section class="section has-background-light is-clipped">
+
+        <div class="container">
+            <h3 class="title is-size-4 has-text-centered is-uppercase pb-2">Livre disponible en boutique</h3>
+            <p class="subtitle has-text-centered"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ab velit sapiente nostrum!</p>
+            
+            <!-- afichage des products -->
+            <div class="columns mb-4">
+                <div class="column is-3-desktop is-6-tablet">
+                    <div class="is-relative has-background-white">
+                        <span class="tag is-absolute is-top-0 is-left-0 ml-4 mt-4 is-danger has-text-weight-bold">-15%</span>
+                        <div class="card-image ml-4 mt-2">
+                            <a href="#"> <img src="./assets/image_product/product-bottle4.png" alt="" class="image"> </a>
+                        </div>
+                        <div class="card-content pt-2 px-3 pb-2">
+                            <div class="content">
+                                <a href="#" class="mb-2 mt-1 px-1 is-block">
+                                    <h5 class="mb-2">NIKE Basket-ball</h5>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$123</span>
+                                        <span class="has-text-grey is-size-7 has-text-weight-normal">$223</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button is-outlined px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3-desktop is-6-tablet">
+                    <div class="is-relative has-background-white">
+                        <span class="tag is-absolute is-top-0 is-left-0 ml-4 mt-4 is-danger has-text-weight-bold">-15%</span>
+                        <div class="card-image ml-4 mt-2">
+                            <a href="#"> <img src="./assets/image_product/product-bottle4.png" alt="" class="image"> </a>
+                        </div>
+                        <div class="card-content pt-2 px-3 pb-2">
+                            <div class="content">
+                                <a href="#" class="mb-2 mt-1 px-1 is-block">
+                                    <h5 class="mb-2">NIKE Basket-ball</h5>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$123</span>
+                                        <span class="has-text-grey is-size-7 has-text-weight-normal">$223</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button is-outlined px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3-desktop is-6-tablet">
+                    <div class="is-relative has-background-white">
+                        <span class="tag is-absolute is-top-0 is-left-0 ml-4 mt-4 is-danger has-text-weight-bold">-15%</span>
+                        <div class="card-image ml-4 mt-2">
+                            <a href="#"> <img src="./assets/image_product/product-bottle4.png" alt="" class="image"> </a>
+                        </div>
+                        <div class="card-content pt-2 px-3 pb-2">
+                            <div class="content">
+                                <a href="#" class="mb-2 mt-1 px-1 is-block">
+                                    <h5 class="mb-2">NIKE Basket-ball</h5>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$123</span>
+                                        <span class="has-text-grey is-size-7 has-text-weight-normal">$223</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button is-outlined px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3-desktop is-6-tablet">
+                    <div class="is-relative has-background-white">
+                        <span class="tag is-absolute is-top-0 is-left-0 ml-4 mt-4 is-danger has-text-weight-bold">-15%</span>
+                        <div class="card-image ml-4 mt-2">
+                            <a href="#"> <img src="./assets/image_product/product-bottle4.png" alt="" class="image"> </a>
+                        </div>
+                        <div class="card-content pt-2 px-3 pb-2">
+                            <div class="content">
+                                <a href="#" class="mb-2 mt-1 px-1 is-block">
+                                    <h5 class="mb-2">NIKE Basket-ball</h5>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$123</span>
+                                        <span class="has-text-grey is-size-7 has-text-weight-normal">$223</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button is-outlined px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3-desktop is-6-tablet">
+                    <div class="is-relative has-background-white">
+                        <span class="tag is-absolute is-top-0 is-left-0 ml-4 mt-4 is-danger has-text-weight-bold">-15%</span>
+                        <div class="card-image ml-4 mt-2">
+                            <a href="#"> <img src="./assets/image_product/product-bottle4.png" alt="" class="image"> </a>
+                        </div>
+                        <div class="card-content pt-2 px-3 pb-2">
+                            <div class="content">
+                                <a href="#" class="mb-2 mt-1 px-1 is-block">
+                                    <h5 class="mb-2">NIKE Basket-ball</h5>
+                                    <p>
+                                        <span class="has-text-info is-size-5 has-text-weight-bold">$123</span>
+                                        <span class="has-text-grey is-size-7 has-text-weight-normal">$223</span>
+                                    </p>
+                                </a>
+                                <div class="has-text-right">
+                                    <a href="#" class="button is-outlined px-3"> <span class="las la-plus"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="mb-20 is-hidden-mobile columns is-multiline is-justify-content-space-between is-align-items-center">
+                <div class="column is-2 is-9-tablet mx-auto-mobile mr-4 is-relative has-background-light p-0">
+                    <div class="column is-3 is-absolute is-top-0 is-bottom-0 is-left-0 has-background-info py-1"></div>
+                </div>
+                <div class="column is-2 ml-auto is-flex is-justify-content-end is-align-items-center">
+                    <a href="#" class="button p-2 px-3 mr-2 is-justify-content-center is-align-items-center is-flex is-flex-shrink-0 is-primary"> <span class="las la-angle-left"></span> </a>
+                    <a href="#" class="button p-2 px-3 is-justify-content-center is-align-items-center is-flex is-flex-shrink-0 is-info"> <span class="las la-angle-right"></span> </a>
+                </div>     
+            </div>
+
+            <div>
+                <a href="#" class="button is-primary is-uppercase"> All product </a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- SECTION CONTACT AVEC COMMENTAIRES -->  
+    <section class="section"> 
+        <h3 class="mb-6 is-size-4 has-text-weight-bold is-uppercase has-text-centered d-flex d-flex-column"> Contact</h3>
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <img src="./assets/images/livre2.jpeg" style="opacity: unset;" alt="">
+                </div>
+                <div class="column my-auto">
+                    <form class="box mx-auto my-auto">
+                        <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="e.g. alex@example.com">
+                        </div>
+                        </div>
+                    
+                        <div class="field">
+                        <label class="label">Password</label>
+                        <div class="control">
+                            <input class="input" type="password" placeholder="********">
+                        </div>
+                        </div>
+                    
+                        <button class="button is-primary">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- To modify -->
+        
+
+    </section>
+
+    <!-- SECTION DE NEWSLETTER -->
+    <section> 
+
+    </section>
+
+    <!-- SECTION FOOTER -->
+    <footer class="footer pt-20 pb-0 has-background-grey-darker">
+        <div class="columns mb-0">
+            
+            <div class="column is-4 mb-12 mb-0-tablet mb-20-tablet">
+                <a href="#" class="is-block title mb-4 has-text-white is-size-4">Livres Audio</a>
+
+                <ul class="mb-8 my-6">
+                    <a href="#" class="is-flex is-size-6 title is-align-items-center has-text-white">
+                        <span class="icons mr-3 has-text-left"></span>
+                        <p class=""> +229 *********** </p>
+                    </a>
+                    <a href="#" class="title is-flex is-size-6 is-align-items-center has-text-white">
+                        <span class="icons mr-3 has-text-left"></span>
+                        <p class=""> exampleAdmin@gmail.com </p>
+                    </a>
+                </ul>
+                
+                <ul class="is-flex">
+                    <li class="control ml-3"> <a href="#"> <span class="icon has-text-warning lab la-facebook-f mr-3"></span> </a> </li>
+                    <li class="control"> <a href="#"> <span class="icon has-text-info las la-heart mr-3"></span> </a> </li>
+                    <li class="control"> <a href="#"> <span class="icon has-text-primary lab la-twitter mr-3"></span> </a> </li>
+                    <li class="control"> <a href="#"> <span class="icon has-text-light lab la-instagram mr-3"></span> </a> </li>
+                </ul>
+            </div>
+            <div class="column is-8 is-6-mobile is-uppercase is-flex">
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Pages </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="./index.html"> Accueil </a></li>
+                        <li class="mb-6"> <a href="./profil.html"> Profil </a></li>
+                        <li class="mb-6"> <a href="./login.html"> Login </a></li>
+                        <li class="mb-6"> <a href="./inscription.html"> Inscription </a></li>
+                    </ul>
+                </div>
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Produit </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="./categorie.html"> Categorie </a></li>
+                        <li class="mb-6"> <a href="./blog.html"> Blog </a></li>
+                        <li class="mb-6"> <a href="./shopping.html"> Shopping Cart </a></li>
+                        <li class="mb-6"> <a href="#"> Item </a> </li>
+                    </ul>
+                </div>
+                <div class="column is-4 is-7-mobile mb-4 mb-0-tablet">
+                    <h5 class="title is-size-6 has-text-white mb-8"> Contact </h5>
+                    <ul class="has-text-white has-text-weight-light">
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                        <li class="mb-6"> <a href="#"> Login </a> </li>
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                        <li class="mb-6"> <a href="#"> Inscription </a> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <hr style="opacity:0.23">
+
+        <div class="is-flex is-justify-content-space-between py-10">
+            <p class="is-size-6 has-text-white title"> Copyright@2022 DLAB-Foundation </p>
+            <a href="#" class="title is-size-6 has-text-white"> Go to up </a>
+        </div>
+    </footer>
+    <script src="./node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script> -->
+
+</body>
+</html>
