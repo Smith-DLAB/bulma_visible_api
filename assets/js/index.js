@@ -31,22 +31,31 @@ tabs.forEach((tab)=>{
 
 // show a modal
 
-const buttonAddCard = document.querySelector('#add_in_shop') ;
+const buttonAddCard = document.querySelector('#add_in_shop');
 const modalBg = document.querySelector('.modal-background') ;
 const modal = document.querySelector('.modal') ;
 const buttonClose = document.querySelector('#close') ;
 
-buttonAddCard.addEventListener( "click", ()=> {
-    modal.classList.add('is-active');
-} );
+if ( buttonAddCard ) {
 
-buttonClose.addEventListener( "click", ()=> {
-    modal.classList.remove('is-active');
-} );
+    buttonAddCard.addEventListener("click", () => {
+        modal.classList.add('is-active');
+    });
+}
 
-modalBg.addEventListener( "click", ()=> {
-    modal.classList.remove('is-active');
-} );
+if ( buttonClose ) {    
+    buttonClose.addEventListener( "click", ()=> {
+        modal.classList.remove('is-active');
+    } );
+}
+
+if (modalBg) {
+    modalBg.addEventListener( "click", ()=> {
+        modal.classList.remove('is-active');
+    } );
+}
+
+
 
 //Font background -- Carousel
 const imageBackFont = document.querySelector("imageFontShow");
@@ -62,6 +71,16 @@ bulmaCarousel.attach('#carousel-demo', {
         ]
 });
 
+const options = {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    loop: true,
+    breakpoint: [
+      { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
+      { changePoint: 640, slidesToShow: 1, slidesToScroll: 2 },
+      { changePoint: 768, slidesToShow: 1, slidesToScroll: 3 },
+    ],
+  };
 // Initialize all elements with carousel class.
 const carousels = bulmaCarousel.attach('.carousel', options);
 
